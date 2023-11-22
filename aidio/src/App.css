@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../public/font/Montserrat-VariableFont_wght.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Karrera';
+  src: local('Karrera'), url('../public/fonts/Karrera-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Anurati';
+  src: local('Anurati'), url('../public/fonts/Anurati-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Aquatico';
+  src: local('Aquatico'), url('../public/fonts/Aquatico-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Reckoner';
+  src: local('Reckoner'), url('../public/fonts/Reckoner.ttf');
+  font-weight: normal;
+}
+
+:root {
+  --primary-font: Karrera;
+  --secondary-font: Montserrat;
+  --anurati-font: Anurati;
+  --aquatico-font: Aquatico;
+  --reckoner-font: Reckoner;
+
+  /* FONT WEIGHT */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 900;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.glass{
+  /* background: rgba(193, 137, 206, 0.15); */
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(193, 137, 206, 0.43);
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
